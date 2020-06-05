@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/* formatação para o body, cor do texto e cor do fundo */
+body{
+    /* background-color: #fcba03; */
+    background-color: hsla(44, 98%, 50%);
+    color: black;
+}
+/* formatação da tag paragrafo */
+p{
+    text-align: justify;
+    text-indent: 50px;
+}
+
+/* formatação de imagens com legendas usando a classe que eu criei lá, as vezes selecionando só a img, ou só a legenda*/
+figure.foto-legenda{
+    position: relative;
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px black;
+}
+figure.foto-legenda img{
+    width: 100%;
+    height: 100%;
+}
+figure.foto-legenda figcaption{
+    opacity: 0;
+    font-size: 30px;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0,0,0,0.2);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+figure.foto-legenda:hover figcaption{
+    opacity: 1;
+}
