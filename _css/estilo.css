@@ -12,7 +12,8 @@ p{
     text-indent: 50px;
 }
 
-/* formatação de imagens com legendas usando a classe que eu criei lá, as vezes selecionando só a img, ou só a legenda*/
+/* formatação de imagens com legendas usando a classe que eu criei lá, as vezes selecionando só a img, ou só a legenda
+sempre que for class é a tag.nome-da-classe*/
 figure.foto-legenda{
     position: relative;
     border: 8px solid white;
@@ -38,3 +39,34 @@ figure.foto-legenda figcaption{
 figure.foto-legenda:hover figcaption{
     opacity: 1;
 }
+
+/* formatação do menu 
+sempre que for id é a tag#nomedoid*/
+
+div#interface{
+    position: relative; /* deixar a interface relativa pra ela ir se movendo de acordo com a resolução da tela e o menu absoluto dentro dela, pq o pai do menu é a div interface, não o próprio body do site*/
+}
+
+nav#menu{
+    display: block;
+}
+
+nav#menu ul{
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute; /* posição absoluta dentro do site inteiro, se deixar relative, vai ser relativo ao proprio nav menu, mexer dentro dele msm*/
+    top: -40px;
+    left: 600px;
+}
+
+nav#menu li{
+    display: inline-block;
+    background-color: rgba(69, 155, 247, 1);
+    padding: 10px;
+    margin: 2px;
+}
+
+nav#menu h1{
+    display: none;
+}
+
