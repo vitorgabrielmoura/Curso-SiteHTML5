@@ -6,11 +6,27 @@ body{
     background-color: hsla(44, 98%, 50%);
     color: black;
 }
+
+div#interface{
+    position: relative; /* deixar a interface relativa pra ela ir se movendo de acordo com a resolução da tela e o menu absoluto dentro dela, pq o pai do menu é a div interface, não o próprio body do site*/
+    width: 1100px;
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    padding: 10px;
+}
+
 /* formatação da tag paragrafo */
 p{
     text-align: justify;
     text-indent: 50px;
 }
+
+header#cabecalho img#icone{
+    position: absolute;
+    left: 81%;
+    top: 75px;
+}
+
 
 /* formatação de imagens com legendas usando a classe que eu criei lá, as vezes selecionando só a img, ou só a legenda
 sempre que for class é a tag.nome-da-classe*/
@@ -43,10 +59,6 @@ figure.foto-legenda:hover figcaption{
 /* formatação do menu 
 sempre que for id é a tag#nomedoid*/
 
-div#interface{
-    position: relative; /* deixar a interface relativa pra ela ir se movendo de acordo com a resolução da tela e o menu absoluto dentro dela, pq o pai do menu é a div interface, não o próprio body do site*/
-}
-
 nav#menu{
     display: block;
 }
@@ -55,8 +67,8 @@ nav#menu ul{
     list-style: none;
     text-transform: uppercase;
     position: absolute; /* posição absoluta dentro da div interface, se deixar relative, vai ser relativo ao proprio nav menu, mexer dentro dele msm*/
-    top: -40px;
-    left: 600px;
+    top: -10px;
+    left: 450px;
 }
 
 nav#menu li{
