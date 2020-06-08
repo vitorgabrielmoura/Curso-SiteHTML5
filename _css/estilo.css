@@ -1,4 +1,9 @@
 @charset "UTF-8";
+@font-face{
+    font-family: 'FontLogo';
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap');
 
 /* formatação para o body, cor do texto e cor do fundo */
 body{
@@ -35,22 +40,22 @@ header#cabecalho {
 }
 
 header#cabecalho h1{
-    font-family: Arial, sans-serif;
-    font-size: 40px;
+    font-family: 'FontLogo', sans-serif;
+    font-size: 45px;
     font-weight: 900;
     color: rgba(26, 7, 112);
     text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
     padding: 0px;
     margin-bottom: 0px;
-    margin-top: 0px;
+    margin-top: 10px;
 }
 
 header#cabecalho h2{
-    font-family: Arial, sans-serif;
+    font-family: 'Balsamiq Sans', cursive;
     color: rgba(0,0,0,0.9);
-    font-size: 20px;
+    font-size: 25px;
     padding: 0px;
-    margin-top: 0px;
+    margin-top: -5px;
 }
 
 /* formatação de imagens com legendas usando a classe que eu criei lá, as vezes selecionando só a img, ou só a legenda
